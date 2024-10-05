@@ -1,5 +1,7 @@
 import express from "express";
 import { createServer } from "node:http";
+import  User  from "./models/usermodel.js";
+import bcrypt, { hash } from "bcrypt"
 
 import { Server } from "socket.io";
 
@@ -8,7 +10,7 @@ import { connectToSocket } from "./Controllers/Socketmanager.js"
 
 import cors from "cors";
 import userRoutes from "./routes/usersroute.js";
-
+import crypto from "crypto"
 const app = express();
 const server = createServer(app);
 const io = connectToSocket(server);
