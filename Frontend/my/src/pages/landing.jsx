@@ -23,7 +23,7 @@ export default function LandingPage() {
                     <h1> <span style={{ color: "#ff9839"}}>Connect</span> with Your Loved Ones</h1>
                     <p>Cover Your Distance by Convo Stream</p>
                     <div role='button'>
-                        <Link to={"/home"}>Get Started</Link>
+                        <Link to={"/auth"}>Get Started</Link>
                     </div>
                 </div>
                 <div>
